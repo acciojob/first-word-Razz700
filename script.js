@@ -5,7 +5,7 @@ function firstWord(s) {
   let str="";
   for(let i=0;i<s.length;i++){
       str+=s[i];
-      if(s[i]==" "){
+      if(s[i]==" " || i==s.length-1){
           str=str.trim();
           return str;
       }
