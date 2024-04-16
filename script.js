@@ -1,5 +1,15 @@
 function firstWord(s) {
   // your code here
+	 s=s.trim();
+  console.log(s);
+  let str="";
+  for(let i=0;i<s.length;i++){
+      str+=s[i];
+      if(s[i]==" "){
+          str=str.trim();
+          return str;
+      }
+  }
 }
 
 // Do not change the code below
